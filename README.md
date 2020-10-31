@@ -4,7 +4,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
-* [Code Example](#code-example)
+* [Code Examples](#code-examples)
 * [Features](#features)
 * [Status](#status)
 
@@ -14,32 +14,43 @@ Bulls and Cows is a code-breaking game. There are two players: the first writes 
 ## Technologies
 * java - version 15.0.1
 
-## Code Example
+## Code Examples
 ```
-Input the length of the secret code:
+Please, enter the secret code's length:
 > 4
 Input the number of possible symbols in the code:
-> 16
-The secret is prepared: **** (0-9, a-f).
+> 12
+The secret is prepared: **** (0-9, a-b).
 Okay, let's start a game!
 Turn 1:
-> 1a34
+> a234
 Grade: 1 bull and 1 cow
 Turn 2:
-> b354
+> 73b4
 Grade: 2 bulls and 1 cow
 Turn 3:
-> 93b4
-Grade: 4 bulls
+> 9374
+Grage: 4 bulls
 Congratulations! You guessed the secret code.
 ```
-
+```
+Please, enter the secret code's length:
+6
+Input the number of possible symbols in the code:
+37
+Error: maximum number of possible symbols in the code is 36 (0-9, a-z).
+```
+```
+Please, enter the secret code's length:
+10
+Input the number of possible symbols in the code:
+12a
+Error: incorrect input.
+```
 ## Features
-List of features ready
+List of features
 * Random code generator (up to 36 digits)
-
-To-do list:
-* Handling various errors
+* Exception handling
 
 ## Status
-Project is: _in progress_
+Project is: _finished_
